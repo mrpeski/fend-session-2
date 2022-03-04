@@ -1,0 +1,15 @@
+html,body {
+    margin: 0;
+}
+.wrapper {
+    display:  flex;
+    min-height: 100vh;
+    background-color: #C4C4C4;
+    justify-content: center; /* centers the box horizontally */
+    align-items: center; /* centers the box vertically */
+}
+.centered-box {
+    width: 250px;
+    height: 250px;
+    background-color: #E5E5E5;
+}
