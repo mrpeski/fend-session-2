@@ -1,0 +1,24 @@
+html, body {
+    margin: 0
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background: #C4C4C4;
+    min-height: 100vh;
+}
+.centered-box {
+    grid-area: 4/5/10/9; /* row-start/column-start/row-end/column-end */
+    background-color: #CECECE;
+}
+
+.col {
+    grid-area: 1/1/13/2;
+    background-color: rgba(253, 199, 237, 0.425)
+}
+
+.row {
+    grid-area: 1/1/2/13;
+    background-color: rgba(253, 199, 237, 0.425)
+}
