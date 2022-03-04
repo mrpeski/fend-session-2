@@ -3,18 +3,35 @@ html, body {
 }
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 70%;
-    grid-template-rows: 1fr;
-    background: #C4C4C4;
     height: 100vh;
-    padding:  60px;
-    grid-gap: 20px
+    justify-content: center;
+    align-items: center;
 }
-.sidebar {
-    grid-area: 1/1/2/2; /* row-start/column-start/row-end/column-end */
+.centered-box {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-areas: "white1 brown1"
+    "brown2 white2";
     background-color: #CECECE;
 }
-.content-area {
-    grid-area: 1/2/2/3; /* row-start/column-start/row-end/column-end */
+.box-1 {
+    grid-area: white1;
+}
+.box-2 {
+    grid-area: brown1;
+}
+.box-3 {
+    grid-area: brown2;
+}
+.box-4 {
+    grid-area: white2;
+}
+
+.box-2, .box-3 {
+    background-color: #383838;
+}
+.box-1, .box-4 {
     background-color: #CECECE;
 }
+
