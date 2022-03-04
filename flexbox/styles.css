@@ -10,13 +10,16 @@ html,body {
 .wrapper{
     display:flex;
     background-color: #C4C4C4;
-    width: 100vw;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    padding: 60px;
 }
-.centered-box {
-    width: 250px;
-    height: 250px;
+.sidebar {
+    flex: 1
+}
+.content-area {
+    flex: 3
+}
+.sidebar, .content-area {
     background-color: #E5E5E5;
+    margin: 0 10px
 }
